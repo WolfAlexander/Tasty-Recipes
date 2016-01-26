@@ -10,8 +10,8 @@ These images shall be links to corresponding recipes.
 ..more info..
 
 Tools used: 
-•	Intellij PHPStorm
-•	XAMPP with MySQL database
+  • Intellij PHPStorm
+  •	XAMPP with MySQL database
 
 Languages and libraries:
 •	HTML 
