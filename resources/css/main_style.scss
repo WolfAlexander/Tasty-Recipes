@@ -1,0 +1,182 @@
+@import "flex-properties";
+$primary-color: #383838;
+$secondary-color: #F8F8F8;
+$theme-color: #FF9933;
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header, nav, aside, section, footer{
+    display: block;
+}
+
+a:link{text-decoration: underline; color: inherit;}
+a:active{text-decoration: none; color: inherit;}
+a:visited{text-decoration: none; color: inherit;}
+a:hover{text-decoration: none; color: $theme-color;}
+
+@font-face {
+    font-family:"Opificio Rounded";
+    src:url("../fonts/Opificio_rounded/Opificio_rounded.eot?") format("eot"),
+    url("../fonts/Opificio_rounded/Opificio_rounded.woff") format("woff"),
+    url("../fonts/Opificio_rounded/Opificio_rounded.ttf") format("truetype"),
+    url("../fonts/Opificio_rounded/Opificio_rounded.svg#Opificio-Rounded") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+
+::selection {
+    background: $theme-color;
+    color: white;
+}
+
+::-moz-selection {
+    background: $theme-color;
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Opificio Rounded";
+    font-weight: bold;
+}
+
+h1{
+    font-size: 2em;
+}
+
+h2{
+    font-size: 1.5em;
+}
+
+h3{
+    font-size: 1.17em;
+}
+
+h4{
+    font-size: 1.12em;
+}
+
+h5{
+    font-size: 0.83em;
+}
+
+h6{
+    font-size: 0.75em;
+}
+
+p{
+    font: normal 17px Arial;
+}
+
+article{
+    font: normal 17px Arial;
+    text-align: left;
+}
+
+section{
+    width: 60%;
+    margin-left: 20%;
+}
+
+input[type="text"], input[type="password"]{
+    width: 300px;
+    height: 22px;
+    border-radius: 20px;
+    padding-left: 4px;
+    margin-bottom: 10px;
+}
+
+textarea{
+    min-width: 90%;
+    width: 90%;
+    max-width: 90%;
+    min-height: 200px;
+    height: 200px;
+    max-height: 200px;
+}
+
+input[type="button"], input[type="submit"]{
+    width: 220px;
+    min-width: 50px;
+    font-size: 15px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 20px;
+    background: $theme-color;
+}
+
+form{
+    width: 100%;
+    text-align: center;
+}
+
+form *{
+    display: block;
+    margin: auto;
+}
+
+.positiveMessageBox{
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+    background: rgba(60, 215, 38, 0.7);
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.warningMessageBox{
+    @extend .positiveMessageBox;
+    background: rgba(255, 253, 30, 0.7);
+    color: black;
+}
+
+.negativeMessageBox{
+    @extend .positiveMessageBox;
+    background: rgba(255, 12, 0, 0.7);
+}
+
+.informationBox{
+    @extend .positiveMessageBox;
+    background: none;
+    color: black;
+    border: 2px solid $theme-color;
+    margin-bottom: 0;
+}
+
+#mainSection{
+    width: 80%;
+    background: $secondary-color;
+    margin-left: 10%;
+    margin-top: 50px;
+    padding: 20px 0 20px 0;
+}
+
+footer{
+    width: 80%;
+    margin-left: 10%;
+    background: $primary-color;
+    min-height: 120px;
+    font: normal 15px "Times New Roman";
+    @include display-flex;
+    @include flex-wrap(wrap);
+    @include flex-direction(row);
+}
+
+footer ul{
+    margin: 5px 0 0 20px;
+    list-style: none;
+    color: white;
+}
+
+footer ul li:first-child{
+    font-weight: bold;
+}
+
+footer ul li:hover a{
+    text-decoration: underline;
+}

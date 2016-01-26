@@ -1,0 +1,112 @@
+#topNav{
+    width: 100%;
+    height: 50px;
+    background: #383838;
+    color: white;
+    border-bottom: 4px solid #FF9933;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#topNav a{
+    color: inherit;
+    text-decoration: none;
+}
+
+#topNav a:hover{
+    color: #FF9933;
+}
+
+#topNav #logo{
+    height: 50px;
+    display: inline-flex;
+    font-size: 20px;
+    line-height: 50px;
+    font-family: "Opificio Rounded";
+    font-weight: bold;
+}
+
+#topNav #logo a{
+    padding: 0 20px;
+}
+
+#topNav input[type="checkbox"]{
+    display: none;
+}
+
+#topNav .menuItems{
+    list-style: none;
+    display: inline-block;
+}
+
+#topNav .menuItems li{
+    display: inline-flex;
+    font: normal 17px "Times New Roman";
+    line-height: 50px;
+}
+
+#topNav .menuItems li:hover{
+    background: #F8F8F8;
+}
+
+#topNav .menuItems li.current{
+    background: #F8F8F8;
+    color: #FF9933;
+}
+
+#topNav .menuItems li a{
+    padding: 0 20px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#topNav #menuSmallBttn{
+    height: 50px;
+    line-height: 50px;
+    position: fixed;
+    top: 0px;
+    right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#topNav #menuItemsCheckbox:checked ~ .menuItems, #topNav #menuItemsCheckbox:checked ~ .menuItems li{
+   display: block;
+}
+
+/*******Top Nav Login Drop Down Form********/
+#topNav #rightMenu{
+    position: fixed;
+    right: 5px;
+    top: 0;
+}
+
+#topNav .menuItems .dropDown label{
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+#topNav .menuItems .dropDown label:hover{
+    color: #FF9933;
+}
+
+#topNav .menuItems .dropDown form{
+    display: none;
+    max-width: 300px;
+    background: #383838;
+    padding: 20px;
+    position: fixed;
+    top: 55px;
+    right: 6px;
+}
+
+#topNav .menuItems .dropDown #loginDropDownCheckbox:checked + form{
+    display: block;
+}
+
+#topNav .menuItems .dropDown #loginDropDownCheckbox:checked ~ #loginDropDownLabel{
+    background: #F8F8F8;
+    color: #FF9933;
+}

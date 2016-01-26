@@ -1,0 +1,59 @@
+@media screen and (max-width: 1080px){
+    #topNav .menuItems{
+        width: 100%;
+        display: none;
+        background: lightgrey;
+        color: black;
+
+    }
+    
+    #topNav #rightMenu{
+        position: static;
+        right: auto;
+        left: auto;
+    }
+
+    #topNav #rightMenu .dropDown label{
+        display: none;
+    }
+
+    #topNav #rightMenu .dropDown form{
+        display: block;
+        max-width: 100%;
+        position: static;
+        background: inherit;
+        border-top: 1px solid grey;
+        border-bottom: 4px solid #FF9933;
+    }
+
+    #topNav #menuSmallBttn{
+        display: inline-block;
+    }
+
+    #mainSection, footer{
+        width: 100%;
+        margin-left: 0;
+        padding: 20px 0 20px 0;
+    }
+
+    #mainSection section{
+        text-align: center;
+    }
+
+    #mainSection .calendar .week .weekIndication{
+        display: block;
+    }
+
+    #mainSection .recipe .expandableBox{
+        max-height: 30px;
+    }
+
+    #mainSection .recipe input[type='checkbox']:checked + .expandableBox{
+        max-height: 1000px;
+    }
+
+    #mainSection input{
+        width: 95%;
+        margin-left: 2.5%;
+    }
+}

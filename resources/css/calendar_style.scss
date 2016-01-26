@@ -1,0 +1,60 @@
+@import "../../includes/css/_flex-properties";
+
+.calendar{
+    width: 100%;
+    margin: 0;
+}
+
+.calendar .week{
+    @include display-flex;
+    @include flex-wrap(wrap);
+    @include justify-content(center);
+}
+
+.calendar .week .weekIndication{
+    width: 100%;
+    color: grey;
+    font-style: italic;
+    text-align: center;
+    display: none;
+}
+
+.calendar .week .day{
+    width: 150px;
+    height: 150px;
+    @include flex(0 1 auto);
+    padding-top: 2px;
+    margin: 1px;
+    border: 1px solid #DDDDDE;
+    text-align: center;
+    background: rgba(221, 222, 222, 0.7);
+
+}
+
+.calendar .week .day p{
+    font: bold 16px "Times New Roman";
+    font-style: italic;
+}
+
+.calendar .week .weekend{
+    background: #FF935C;
+}
+
+.calendar .week .notCalendarDay{
+    opacity: 0.4;
+}
+
+.calendar .week .day p{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.calendar .week .day a img{
+    max-width: 100%;
+    margin-left: 2.5%;
+}
+
+.calendar .week .day a img:hover{
+    opacity: 0.8;
+}

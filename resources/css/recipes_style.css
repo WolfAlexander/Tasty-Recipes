@@ -1,0 +1,107 @@
+.recipe h2 {
+  text-align: center; }
+
+.recipe .recipeInfo {
+  width: 100%;
+  margin: 20px 0 20px 0;
+  font: 17px normal Arial; }
+
+.recipe .recipeInfo .recipeImg {
+  max-width: 100%;
+  border-radius: 100%; }
+
+.recipe .recipeInfo ul {
+  list-style: none; }
+
+.recipe .recipeInfo ul li img {
+  width: 50px;
+  height: 50px; }
+
+.recipe input[type='checkbox'] {
+  display: none; }
+
+.recipe input[type='checkbox']:checked + .expandableBox {
+  -webkit-transition: max-height 1s ease-out;
+  -moz-transition: max-height 1s ease-out;
+  -o-transition: max-height 1s ease-out;
+  transition: max-height 1s ease-out;
+  max-height: 30px; }
+
+.recipe .expandableBox {
+  width: 100%;
+  max-height: 1000px;
+  overflow: hidden;
+  border: 2px solid #FF9933;
+  margin-bottom: 10px;
+  -webkit-transition: max-height 0.85s ease-in;
+  -moz-transition: max-height 0.85s ease-in;
+  -o-transition: max-height 0.85s ease-in;
+  transition: max-height 0.85s ease-in; }
+
+.recipe .expandableBox .expandableBoxHeader {
+  display: block;
+  width: 100%;
+  background: #FF9933;
+  cursor: pointer; }
+
+.recipe .expandableBox .expandableBoxHeader span {
+  display: inline-block;
+  font-family: "Opificio Rounded";
+  font-weight: bold;
+  font-size: 1.17em;
+  color: white;
+  padding: 5px; }
+
+.recipe .expandableBox .expandableBoxHeader img {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  float: right;
+  clear: right; }
+
+.recipe .expandableBox .expandableBoxContent {
+  padding: 10px 35px 10px 35px; }
+
+.recipe .expandableBox #leaveCommentForm {
+  font: 17px normal Arial; }
+
+.recipe .expandableBox #leaveCommentForm form {
+  text-align: left; }
+
+.recipe .expandableBox #leaveCommentForm form * {
+  margin: 0 0 2px 0; }
+
+.recipe .expandableBox #leaveCommentForm .leaveCommentUsername {
+  font-weight: bold;
+  display: inline-block; }
+
+.recipe .expandableBox #commentsWindow .commentHeader .commentUsername {
+  font-weight: bold; }
+
+.recipe .expandableBox #commentsWindow .commentHeader .commentDate {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 15px; }
+
+.recipe .expandableBox #commentsWindow .commentText {
+  font-size: 15px;
+  padding: 5px 0;
+  margin-bottom: 5px;
+  border-bottom: 1px solid lightgrey; }
+
+.recipe .expandableBox #commentsWindow form {
+  display: inline-block !important;
+  width: 100px;
+  text-align: left; }
+
+.recipe .expandableBox #commentsWindow input[type="button"] {
+  width: auto;
+  height: auto;
+  padding: 0px 5px 0px 5px;
+  font-size: 12px; }
+
+/**/
+.recipe .expandableBox #editMessageToUser p{
+  margin-top: 10px;
+}
+/*# sourceMappingURL=recipes_style.css.map */

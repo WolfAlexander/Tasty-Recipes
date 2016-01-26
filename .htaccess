@@ -1,0 +1,3 @@
+<FilesMatch DBAccess.php>
+    Deny from all
+</FilesMatch>

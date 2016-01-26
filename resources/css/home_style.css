@@ -1,0 +1,9 @@
+section #calendarLogo{
+    max-width: 303px;
+    max-height: 303px;
+    margin: auto;
+}
+
+section #calendarLogo a img{
+    max-width: 100%;
+}
